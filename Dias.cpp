@@ -22,10 +22,21 @@ assert(Mes(1,1932) == 31);
 /*
 se verifica si el año es bisiesto
 */
-int Ano (int A)  {return 
+/*int Ano (int A)  {return 
     A%4 == 0 ? 0 :
     A%100 == 0 and A%400 == 0 ? 0  :
     1 ;
+    };
+*/
+
+/* Se modifica la sentencia para verificar
+si el año es bisiesto*/
+
+int Ano (int A)  {return 
+    A <= 1582 ? -1 :
+    A%4 == 0 and A%100 !=0 ? 0 :
+    A%100 == 0 and A%400 == 0 ? 0 :
+    1;
     };
 
 /*¿No deberia ser:
