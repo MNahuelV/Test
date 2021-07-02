@@ -22,6 +22,7 @@ int main () {
     assert(getCantidadDias(2,2000) == 29);
     }
 
+    {//Programa
     unsigned solicitarMes();
     unsigned solicitarYear();
 
@@ -32,6 +33,7 @@ int main () {
 
 
     validar(mes,year);
+    }
     
 };
 
